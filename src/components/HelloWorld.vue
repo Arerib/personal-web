@@ -1,58 +1,54 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
-    </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-pwa" target="_blank" rel="noopener">pwa</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-router" target="_blank" rel="noopener">router</a></li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
-    </ul>
+    <!-- Hero 4 - Bootstrap Brain Component -->
+<section class="bg-secondary" style="margin: 12px; border-radius: 15px;">
+  <div class="container-fluid overflow-hidden">
+    <div class="row">
+      <div class="col-12 col-md-6 order-1 order-md-0 align-self-md-end">
+        <div class="row py-3 py-sm-5 py-xl-9 mt-md-10 justify-content-sm-center">
+          <div class="col-12 col-sm-10">
+            <h2 class="display-2 fw-bolder mb-4 text-white">We Offer Modern Web App Solutions</h2>
+            <div class="row">
+              <div class="col-12 col-xxl-8">
+                <p class="fs-5 mb-5 text-white">Transform your online presence with our cutting-edge web solutions. Contact us today to get started on creating a modern, impactful website tailored to your needs</p>
+              </div>
+            </div>
+            <div class="d-grid gap-2 d-sm-flex">
+                <a href="/about" class="custom-button">Explore Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 p-0">
+        <img class="img-fluid w-85 h-85 object-fit-cover" loading="lazy" src="../assets/BLogo.png" alt="We Offer Modern Web Solutions">
+      </div>
+    </div>
   </div>
+</section>
 </template>
 
-<script>
-export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
-  }
+<style>
+.button-container {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically if height is set */
+    height: 100vh; /* Full viewport height for vertical centering */
 }
-</script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h3 {
-  margin: 40px 0 0;
+/* Custom button styles */
+.custom-button {
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding to make the button bigger */
+    font-size: 1.5 rem; /* Adjust font size for a bigger text */
+    text-align: center;
+    color: #fff; /* Text color */
+    background-color: #000; /* Button background color */
+    border: none;
+    border-radius: 25px; /* Round corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+
+.custom-button:hover {
+    background-color: #ff0000; /* Darker background color on hover */
 }
 </style>
